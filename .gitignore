@@ -1,8 +1,0 @@
-
-*.egg
-GenderAgePoc.egg-info/dependency_links.txt
-GenderAgePoc.egg-info/PKG-INFO
-GenderAgePoc.egg-info/requires.txt
-GenderAgePoc/__pycache__/__init__.cpython-38.pyc
-GenderAgePoc.egg-info/top_level.txt
-GenderAgePoc.egg-info/SOURCES.txt

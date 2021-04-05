@@ -1,5 +1,5 @@
 # from .Retinaface.Retinaface import FaceDetector 
-from .contrib.facelib.AgeGender.Detector import AgeGenderEstimator as GenderAgeEstimator
+from .contrib.facelib.AgeGender.Detector import AgeGenderEstimator as GenderAgeEstimatorOffline
 # from .FacialExpression.FaceExpression import EmotionDetector
 # from .InsightFace.models.Learner import FaceRecognizer
 # from .InsightFace.models.utils import update_facebank, load_facebank, special_draw

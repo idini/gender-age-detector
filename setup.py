@@ -12,7 +12,7 @@ setuptools.setup(
     version='0.1Alpha',
     author="Maurizio Idini",
     author_email="maurizio.idini@gmail.com",
-    description="Age Gender Recognition",
+    description="Gender Age Recognition",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/idini/gender-age-detector",

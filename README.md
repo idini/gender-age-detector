@@ -5,6 +5,7 @@
 - [Requirements](#Requirements)
 - [Installation](#Installation)
 - [Estimator](#Estimator)
+- [Utils](#Utils)
 
 ## Requirements
 - Python v3.7.3+

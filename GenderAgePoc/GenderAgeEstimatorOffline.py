@@ -9,12 +9,9 @@ class GenderAgeEstimatorOffline:
         self.age_gender_detector = AgeGenderEstimator(device=device)
 
     def predict(self, image, show=False):
-
-
 		faces, boxes, scores, landmarks = self.face_detector.detect_align(image)
 		genders, ages = self.age_gender_detector.detect(faces)
 
-		 
         if draw:
         	if len(faces.shape) > 1:
         		frame = image.copy()
@@ -24,6 +21,5 @@ class GenderAgeEstimatorOffline:
 	        cv2.imshow('frame', frame)
 	        if cv2.waitKey(1) == ord('q'):
 				cv2.destroyAllWindows()
-
 
 		return genders, ages

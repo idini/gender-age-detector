@@ -4,6 +4,7 @@
 
 - [Requirements](#Requirements)
 - [Installation](#Installation)
+- [Estimator](#Estimator)
 
 ## Requirements
 - Python v3.7.3+
@@ -21,3 +22,32 @@ To install Torch, please don't use ```pip``` or ```conda install```, go to https
 
 Run command from terminal
 ```pip install git+https://github.com/idini/gender-age-detector.git```
+
+## Estimator
+
+We can estimate in realtime using the webcam 
+
+```python
+from GenderAgePoc.GenderAgeEstimatorOnline import GenderAgeEstimatorOnline
+ol = GenderAgeEstimatorOnline()
+ol.run()
+```
+
+or estimate age and gender from a picture
+
+```python
+from GenderAgePoc.GenderAgeEstimatorOffline import GenderAgeEstimatorOffline
+ol = GenderAgeEstimatorOffline()
+ol.predict(image)
+# ol.predict(image, draw = True) # draw bbox and estimation on the picture
+```
+
+## Utils
+
+We can import a picture using OpenCV
+
+```python
+import cv2
+
+img = cv2.imread( <PATH-TO-IMAGE> )
+```

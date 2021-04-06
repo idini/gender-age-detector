@@ -8,3 +8,4 @@ opencv_python>=3.4.0.12
 torchvision>=0.2.1
 requests
 facelib@git+git://github.com/idini/FaceLib
+scikit-image

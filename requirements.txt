@@ -9,3 +9,4 @@ torchvision>=0.2.1
 requests
 facelib@git+git://github.com/idini/FaceLib
 scikit-image
+sklearn

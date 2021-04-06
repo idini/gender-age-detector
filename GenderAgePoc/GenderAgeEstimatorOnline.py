@@ -31,7 +31,7 @@ class GenderAgeEstimatorOnline:
                 genders, ages = self.age_gender_detector.detect(faces)
                 print(genders, ages)
                 for i, b in enumerate(boxes):
-                    special_draw(frame, b, landmarks[i], name=genders[i]+' '+str(self.mapAge(ages[i])))
+                    special_draw(frame, b, landmarks[i], name=genders[i]+' '+str(self.__mapAge(ages[i])))
 
             cv2.imshow('frame', frame)
             if cv2.waitKey(1) == ord('q'):

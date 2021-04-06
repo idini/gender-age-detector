@@ -30,7 +30,6 @@ class GenderAgeEstimatorOnline:
             faces, boxes, scores, landmarks = self.face_detector.detect_align(frame)
             if len(faces.shape) > 1:
                 genders, ages = self.age_gender_detector.detect(faces)
-                print(genders, ages)
                 for i, b in enumerate(boxes):
                     special_draw(frame, b, landmarks[i], name=genders[i]+' '+str(self.__mapAge(ages[i])))
 

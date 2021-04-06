@@ -1,4 +1,4 @@
-import GenderAgeEstimatorOffline
-import GenderAgeEstimatorOnline
-from utils import *
-__all__ = ['GenderAgeEstimatorOffline', 'GenderAgeEstimatorOnline', 'draw_boxes']
+from GenderAgeEstimatorOffline import GenderAgeEstimatorOffline
+from GenderAgeEstimatorOnline import GenderAgeEstimatorOnline
+
+__all__ = ['GenderAgeEstimatorOffline', 'GenderAgeEstimatorOnline']

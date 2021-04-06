@@ -1,5 +1,5 @@
 from facelib import FaceDetector, AgeGenderEstimator
-from utils import draw_boxes
+from facelib import special_draw
 import cv2
 
 class GenderAgeEstimatorOffline:
@@ -20,7 +20,7 @@ class GenderAgeEstimatorOffline:
         		frame = image.copy()
 	            for i, b in enumerate(boxes):
 	            	# create new image and draw on it
-	                draw_boxes(frame, b, landmarks[i], name=genders[i]+' '+str(ages[i]))
+	                special_draw(frame, b, landmarks[i], name=genders[i]+' '+str(ages[i]))
 	        cv2.imshow('frame', frame)
 	        if cv2.waitKey(1) == ord('q'):
 				cv2.destroyAllWindows()

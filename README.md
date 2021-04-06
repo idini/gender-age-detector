@@ -19,7 +19,7 @@
 ### Install Torch
 To install Torch, please don't use ```pip``` or ```conda install```, go to https://pytorch.org/get-started/locally/
 
-### Install dependences
+### Install dependences and package
 
 Run command from terminal
 ```pip install git+https://github.com/idini/gender-age-detector.git```

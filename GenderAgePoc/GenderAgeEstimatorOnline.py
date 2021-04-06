@@ -1,6 +1,6 @@
 from facelib import FaceDetector
 from facelib import AgeGenderEstimator
-from facelib import special_draw
+from utils import draw_boxes
 import torch
 import cv2
 
@@ -24,10 +24,12 @@ class GenderAgeEstimatorOnline:
                 if len(faces.shape) > 1:
                     genders, ages = self.age_gender_detector.detect(faces)
                     for i, b in enumerate(boxes):
-                        special_draw(frame, b, landmarks[i], name=genders[i]+' '+str(ages[i]))
+                        draw_boxes(frame, b, landmarks[i], name=genders[i]+' '+str(ages[i]))
 
                 cv2.imshow('frame', frame)
                 if cv2.waitKey(1) == ord('q'):
                     break
 
             cv2.destroyAllWindows()
+
+

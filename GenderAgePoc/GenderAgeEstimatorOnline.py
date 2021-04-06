@@ -3,6 +3,7 @@ from facelib import AgeGenderEstimator
 from facelib import special_draw
 import torch
 import cv2
+import numpy as np
 
 class GenderAgeEstimatorOnline:
     def __init__(self, device=torch.device("cuda:0" if torch.cuda.is_available() else "cpu")):

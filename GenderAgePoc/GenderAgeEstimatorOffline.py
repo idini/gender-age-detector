@@ -1,6 +1,7 @@
 from facelib import FaceDetector, AgeGenderEstimator
 from facelib import special_draw
 import cv2
+import torch
 
 class GenderAgeEstimatorOffline:
 	def __init__(self, device=torch.device("cuda:0" if torch.cuda.is_available() else "cpu")):

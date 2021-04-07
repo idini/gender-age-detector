@@ -1,4 +1,4 @@
-<h1 align="center">gender-age-detector</h1>
+<h1 align="center">Gender Age Detector POC</h1>
 
 ## Index of contents
 
@@ -8,7 +8,7 @@
 - [Utils](#Utils)
 
 ## Requirements
-- Python v3.7.3+
+- Python v3.7+
 - Torch
 - Numpy
 - Matplotlib
@@ -40,7 +40,7 @@ or estimate age and gender from a picture
 from GenderAgePoc.GenderAgeEstimatorOffline import GenderAgeEstimatorOffline
 ol = GenderAgeEstimatorOffline()
 ol.predict(image)
-# ol.predict(image, draw = True) # draw bbox and estimation on the picture
+# ol.predict(image, draw = True) # draw bbox and estimation in the picture
 ```
 
 ## Utils
